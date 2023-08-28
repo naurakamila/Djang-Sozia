@@ -1,0 +1,251 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Start Title -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2 class="text-dark fw-light lh-base mt-5">Blog, Article & <span class="fw-medium title">Stories
+                            news.</span></h2>
+                    <p class="fs-16 text-muted mb-0">See us from how we organize, the activities, the events that are carried out, the knowledge that we share with you all!</p>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- End Title -->
+
+    <section class="sm-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <!-- Post-->
+                    <article class="post position-relative pb-5">
+                        <div
+                            class="date-box rounded-3 shadow text-center bg-light position-absolute top-0 start-0 p-2 ms-3 mt-3">
+                            <h6 class="fs-14 fw-medium mb-0">25-3-2021</h6>
+                        </div>
+                        <div class="post-preview mb-4">
+                            <a href="{% url 'blog-single-post' %}"><img src="{% static 'images/blog/1.jpg'%}" width="720p" alt=""
+                                    class="img-fluid rounded-3" /></a>
+                        </div>
+                        <div class="post">
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="fs-15 text-muted mb-0"><i data-feather="message-square"
+                                        class="icon-xs me-1"></i> <a href="javascript:void(0)"
+                                        class="text-muted">364</a></p>
+                                <p class="fs-15 text-muted mb-0"><i data-feather="eye" class="icon-xs me-1"></i> <a
+                                        href="javascript:void(0)" class="text-muted">56.8 K</a></p>
+                            </div>
+                            <h6 class="fs-22 fw-semibold my-3 post-title"><a href="{% url 'blog-single-post' %}">How to develop teamwork?</a></h6>
+                            <p class="text-muted">
+                                Your team's performance is your performance! Getting off to a good start is essential 
+                                to team performance! This course will help you lead your team through the common stages 
+                                from forming to performing, with less of the common "storming" as your team seeks a mature
+                                 level of self-management.
+                            </p>
+                            <a href="https://www.udemy.com/course/building-your-team/?utm_source=adwords&utm_medium=udemyads&utm_campaign=DSA_Catchall_la.EN_cc.ID&utm_term=_._ag_112265177716_._ad_500831051438_._de_c_._dm__._pl__._ti_dsa-44794821923_._li_1007706_._pd__._&gclid=CjwKCAjwxaanBhBQEiwA84TVXE7OsUo43w5V0FFIAp-9rRUG-iKRjJhLjoSmXKFS2y56C6SEsUPeyBoC8aMQAvD_BwE" class="fw-medium text-dark">Read More <i
+                                    data-feather="arrow-right" class="icon-xs icon"></i></a>
+                        </div>
+                    </article>
+                    <!-- Post end-->
+                    <!-- Post-->
+                    <article class="post position-relative pb-5">
+                        <div
+                            class="date-box rounded-3 shadow text-center bg-light position-absolute top-0 start-0 p-2 ms-3 mt-3">
+                            <h6 class="fs-14 fw-medium mb-0">16-11-2021</h6>
+                        </div>
+                        <div class="post-preview mb-4">
+                            <a href="{% url 'blog-single-post' %}"><img src="{% static 'images/blog/2.jpg'%}" width="700px"
+                                    class="img-fluid rounded-3" /></a>
+                        </div>
+                        <div class="post">
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="fs-15 text-muted mb-0"><i data-feather="message-square"
+                                        class="icon-xs me-1"></i> <a href="javascript:void(0)"
+                                        class="text-muted">897</a></p>
+                                <p class="fs-15 text-muted mb-0"><i data-feather="eye" class="icon-xs me-1"></i> <a
+                                        href="javascript:void(0)" class="text-muted">99.2 K</a></p>
+                            </div>
+                            <h6 class="fs-22 fw-semibold my-3 post-title"><a href="{% url 'blog-single-post' %}">What makes the best
+                                    co-working space?</a></h6>
+                            <p class="text-muted">
+                                An increasing number of coworking offices are popping up worldwide as individuals 
+                                desire to join a creative and inspiring work environment. People are eager to ditch 
+                                a traditional office environment’s strict and constricting rules in favor of a more hospitable atmosphere. 
+                                So if you’re interested in coworking offices and what to look for when shopping for a 
+                                new flexible workspace, keep reading to learn what makes a good coworking space. 
+
+
+                            </p>
+                            <a href="https://www.thecannon.com/blog/what-makes-a-good-coworking-space#:~:text=%EF%BB%BFA%20good%20coworking%20space,support%2C%20and%20a%20welcoming%20ambiance." class="fw-medium text-dark">Read More <i
+                                    data-feather="arrow-right" class="icon-xs icon"></i></a>
+                        </div>
+                    </article>
+                    <!-- Post end-->
+                    <!-- Post-->
+                    <article class="post position-relative pb-5">
+                        <div
+                            class="date-box rounded-3 shadow text-center bg-light position-absolute top-0 start-0 p-2 ms-3 mt-3">
+                            <h6 class="fs-14 fw-medium mb-0">05-08-2021</h6>
+                        </div>
+                        <div class="post-preview mb-4">
+                            <a href="{% url 'blog-single-post' %}"><img src="{% static 'images/blog/3.jpg'%}" width="700px" alt=""
+                                    class="img-fluid rounded-3" /></a>
+                        </div>
+                        <div class="post">
+                            <div class="d-flex align-items-center gap-3">
+                                <p class="fs-15 text-muted mb-0"><i data-feather="message-square"
+                                        class="icon-xs me-1"></i> <a href="javascript:void(0)"
+                                        class="text-muted">447</a></p>
+                                <p class="fs-15 text-muted mb-0"><i data-feather="eye" class="icon-xs me-1"></i> <a
+                                        href="" class="text-muted">68.1 K</a></p>
+                            </div>
+                            <h6 class="fs-22 fw-semibold my-3 post-title"><a href="{% url 'blog-single-post' %}">Co-Working Spaces
+                                    and Their Benefits</a></h6>
+                            <p class="text-muted">
+                                Coworking spaces are shared workspaces where individuals, freelancers, startups, 
+                                and small businesses can rent a desk, office, or meeting space. Coworking spaces 
+                                have grown in popularity in recent years, with more and more people opting to work 
+                                in these spaces instead of traditional office spaces. In this article, I will discuss
+                                the benefits of a coworking space.
+                            </p>
+                            <a href="https://www.linkedin.com/pulse/benefits-coworking-space-travis-low#:~:text=Coworking%20spaces%20offer%20many%20benefits,and%20improve%20work%2Dlife%20balance." class="fw-medium text-dark">Read More <i
+                                    data-feather="arrow-right" class="icon-xs icon"></i></a>
+                        </div>
+                    </article>
+                    <!-- Post end-->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="sidebar ms-3">
+                        <!-- Search widget-->
+                        <aside class="widget widget_search">
+                            <form class="position-relative">
+                                <input class="form-control" type="search" placeholder="Search...">
+                                <button
+                                    class="bg-transparent border-0 position-absolute top-50 end-0 translate-middle-y me-2"
+                                    type="submit"><span class="icon-xs icon text-dark"
+                                        data-feather="search"></span></button>
+                            </form>
+                        </aside>
+                        <div>
+                            <div class="sd-title mt-4">
+                                <h6 class="border-bottom pb-3 mb-0">Categories</h6>
+                            </div>
+                            <div class="ms-3 my-3">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input fs-16" type="checkbox" value=""
+                                        id="flexCheckDefault" />
+                                    <label class="form-check-label text-dark ms-2"
+                                        for="flexCheckDefault">Accessories</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input fs-16" type="checkbox" value=""
+                                        id="flexCheckChecked1" checked />
+                                    <label class="form-check-label text-dark ms-2" for="flexCheckChecked1">Bag</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input fs-16" type="checkbox" value=""
+                                        id="flexCheckChecked2" />
+                                    <label class="form-check-label text-dark ms-2"
+                                        for="flexCheckChecked2">Clothing</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input fs-16" type="checkbox" value=""
+                                        id="flexCheckChecked3" />
+                                    <label class="form-check-label text-dark ms-2"
+                                        for="flexCheckChecked3">Decore</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input fs-16" type="checkbox" value=""
+                                        id="flexCheckChecked4" />
+                                    <label class="form-check-label text-dark ms-2" for="flexCheckChecked4">Coffee
+                                        Pots</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="sd-title mt-4">
+                                <h6 class="border-bottom pb-3 mb-0">Polular Post</h6>
+                            </div>
+                            <ul class="list-unstyled my-4">
+                                <li class="d-flex mb-3 pb-3 border-bottom">
+                                    <a class="w-25 me-3" href="javascript:void(0)"><img src="{% static 'images/works/img4.jpg'%}"
+                                            alt="" class="img-fluid rounded" /></a>
+                                    <div class="flex-1"><a href="javascript:void(0)" class="text-dark">Beautiful Day
+                                            With Friends..</a>
+                                        <span class="d-block text-muted">Jun 15, 2021</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex mb-3 pb-3 border-bottom">
+                                    <a class="w-25 me-3" href="javascript:void(0)"><img src="{% static 'images/works/img2.jpg'%}"
+                                            alt="" class="img-fluid rounded" /></a>
+                                    <div class="flex-1"><a href="javascript:void(0)" class="text-dark">Nature valley
+                                            with cooling..</a>
+                                        <span class="d-block text-muted">Jun 10, 2021</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <a class="w-25 me-3" href="javascript:void(0)"><img src="{% static 'images/works/img10.jpg'%}"
+                                            alt="" class="img-fluid rounded" /></a>
+                                    <div class="flex-1"><a href="javascript:void(0)" class="text-dark">Beautiful Day
+                                            With Friends..</a>
+                                        <span class="d-block text-muted">Jun 8, 2021</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                       
+
+                        <div class="mt-5">
+                            <div class="sd-title mt-4">
+                                <h6 class="border-bottom pb-3 mb-0">Archives</h6>
+                            </div>
+                            <ul class="list-unstyled my-4">
+                                <li class="py-1 text-dark"><a class="me-2 text-muted" href="javascript:void(0)">March
+                                        2021</a> (40)
+                                </li>
+                                <li class="py-1 text-dark"><a class="me-2 text-muted" href="javascript:void(0)">April
+                                        2021</a> (08)
+                                </li>
+                                <li class="py-1 text-dark"><a class="me-2 text-muted" href="javascript:void(0)">May
+                                        2021</a> (11)</li>
+                                <li class="py-1 text-dark"><a class="me-2 text-muted" href="javascript:void(0)">Jun
+                                        2021</a> (21)</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="sd-title mt-4">
+                                <h6 class="border-bottom pb-3 mb-0">Tags</h6>
+                            </div>
+                            <div class="tagcloud py-4">
+                                <a class="rounded d-inline-block fs-13 fw-medium mx-1 my-1 px-2 py-1"
+                                    href="javascript:void(0)">logo</a>
+                                <a class="rounded d-inline-block fs-13 fw-medium mx-1 my-1 px-2 py-1"
+                                    href="javascript:void(0)">business</a>
+                                <a class="rounded d-inline-block fs-13 fw-medium mx-1 my-1 px-2 py-1"
+                                    href="javascript:void(0)">corporate</a>
+                                <a class="rounded d-inline-block fs-13 fw-medium mx-1 my-1 px-2 py-1"
+                                    href="javascript:void(0)">e-commerce</a>
+                                <a class="rounded d-inline-block fs-13 fw-medium mx-1 my-1 px-2 py-1"
+                                    href="javascript:void(0)">agency</a>
+                                <a class="rounded d-inline-block fs-13 fw-medium mx-1 my-1 px-2 py-1"
+                                    href="javascript:void(0)">responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+
+    <!-- start brand-logo -->
+   
+{% endblock %}

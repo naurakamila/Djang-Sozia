@@ -1,0 +1,303 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Start Title -->
+    <section class="hero position-relative overflow-hidden align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2 class="text-dark fw-light lh-base mt-5">This is the <span
+                            class="fw-medium title">Sozia</span>, a design and branding agency with fantastic partners. :)</h2>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- End Title -->
+
+
+    <!-- shuffle portfolio -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 filters-group-wrap mb-3">
+                    <div class="filters-group">
+
+                        <ul class="container-filter mb-0 categories-filter list-unstyled filter-options">
+                            <li class="list-inline-item categories position-relative active my-sm-0 my-2"
+                                data-group="all"><a href="javascript:void(0)">All</a></li>
+                            <li class="list-inline-item categories position-relative my-sm-0 my-2 "
+                                data-group="branding"><a class="" href="javascript:void(0)">Programming</a></li>
+                            <li class="list-inline-item categories position-relative my-sm-0 my-2"
+                                data-group="designing"><a href="javascript:void(0)">Designing</a></li>
+                            <li class="list-inline-item categories position-relative my-sm-0 my-2"
+                                data-group="development"><a href="javascript:void(0)">Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div id="grid" class="row">
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" class="d-inline-block" title="">
+                                <img src="{% static 'images/works/p1.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Investing Web</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Programming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-2.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/d5.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Monocle</a>
+                                </h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-3.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/logo.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Meow</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-4.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/m0.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Building</a>
+                                </h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">City Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" class="d-inline-block" title="">
+                                <img src="{% static 'images/works/p2.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Design Studio Web</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-6.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/p3.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Courses Web</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-7.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/d2.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Creativa</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Typography Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-8.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/m6.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Mountain</a>
+                                </h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">View Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-9.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/m3.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Broken Clock</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Concept Photography </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-1.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/m8.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">River and The Mountain</a>
+                                </h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">View Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+               
+<!--
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-8.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/d0.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Yellow Background with Books</a>
+                                </h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Books</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                end col-->
+
+                 <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-7.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/d1.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Integration</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Typogrphy Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
+                    <div
+                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0">
+                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-3.jpg'%}" data-gallery="myGal"
+                                class="d-inline-block" title="">
+                                <img src="{% static 'images/works/logo2.jpg'%}" class="img-fluid rounded" alt="work-image" />
+                            </a>
+                            <div class="content bg-light p-3 shadow">
+                                <h6><a href="{% url 'work-detail' %}"
+                                        class="text-dark fw-medium fs-15">Music Factory</a></h6>
+                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mt-5">
+                        <a href="{% url 'work-detail' %}" class="btn btn-primary me-2">Work Details<i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{% url 'contact' %}" class="btn btn-primary">Get In Touch <i class="mdi mdi-lifebuoy ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock content %}
+
+
+{% block extra_js %}
+
+    <!-- Shuffle JS -->
+    <script src="{% static 'js/shuffle.min.js'%}"></script>
+    <script src="{% static 'js/gallery.init.js'%}"></script>
+
+
+{% endblock extra_js %}
